@@ -1,6 +1,6 @@
 FROM golang:1.20.2-bullseye AS build-env
 
-WORKDIR /go/src/github.com/evmos/evmos
+WORKDIR /go/src/github.com/catena/catena
 
 RUN apt-get update -y
 RUN apt-get install git -y
@@ -16,7 +16,7 @@ RUN apt-get install ca-certificates jq -y
 
 WORKDIR /root
 
-COPY --from=build-env /go/src/github.com/evmos/evmos/build/catenad /usr/bin/catenad
+COPY --from=build-env /go/src/github.com/catena/catena/build/catenad /usr/bin/catenad
 
 EXPOSE 26656 26657 1317 9090 8545 8546
 

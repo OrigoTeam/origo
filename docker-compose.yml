@@ -2,53 +2,53 @@ version: '3'
 
 services:
   node0:
-    container_name: evmosnode0
-    image: "evmos/node"
+    container_name: catenanode0
+    image: "catena/node"
     ports:
       - "26656-26657:26656-26657"
     volumes:
-      - ./build/node0/catenad:/evmos:Z
+      - ./build/node0/catenad:/catena:Z
     command:
-      - /catenad start --home /evmos
+      - /catenad start --home /catena
     networks:
       localnet:
         ipv4_address: 192.167.10.2
 
   node1:
-    container_name: evmosnode1
-    image: "evmos/node"
+    container_name: catenanode1
+    image: "catena/node"
     ports:
       - "26659-26660:26656-26657"
     volumes:
-      - ./build/node1/catenad:/evmos:Z
+      - ./build/node1/catenad:/catena:Z
     command:
-      - /catenad start --home /evmos
+      - /catenad start --home /catena
     networks:
       localnet:
         ipv4_address: 192.167.10.3
 
   node2:
-    container_name: evmosnode2
-    image: "evmos/node"
+    container_name: catenanode2
+    image: "catena/node"
     ports:
       - "26661-26662:26656-26657"
     volumes:
-      - ./build/node2/catenad:/evmos:Z
+      - ./build/node2/catenad:/catena:Z
     command:
-      - /catenad start --home /evmos
+      - /catenad start --home /catena
     networks:
       localnet:
         ipv4_address: 192.167.10.4
 
   node3:
-    container_name: evmosnode3
-    image: "evmos/node"
+    container_name: catenanode3
+    image: "catena/node"
     ports:
       - "26663-26664:26656-26657"
     volumes:
-      - ./build/node3/catenad:/evmos:Z
+      - ./build/node3/catenad:/catena:Z
     command:
-      - /catenad start --home /evmos
+      - /catenad start --home /catena
     networks:
       localnet:
         ipv4_address: 192.167.10.5
