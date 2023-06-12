@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Evmos packages. If not, see https://github.com/evmos/evmos/blob/main/LICENSE
+// along with the Evmos packages. If not, see https://github.com/OrigoTeam/origo/blob/main/LICENSE
 
 package main
 
@@ -53,16 +53,16 @@ import (
 	govv1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	"github.com/evmos/evmos/v12/crypto/hd"
-	"github.com/evmos/evmos/v12/server/config"
-	srvflags "github.com/evmos/evmos/v12/server/flags"
+	"github.com/OrigoTeam/origo/crypto/hd"
+	"github.com/OrigoTeam/origo/server/config"
+	srvflags "github.com/OrigoTeam/origo/server/flags"
 
-	evmostypes "github.com/evmos/evmos/v12/types"
-	evmtypes "github.com/evmos/evmos/v12/x/evm/types"
+	evmostypes "github.com/OrigoTeam/origo/types"
+	evmtypes "github.com/OrigoTeam/origo/x/evm/types"
 
-	cmdcfg "github.com/evmos/evmos/v12/cmd/config"
-	evmoskr "github.com/evmos/evmos/v12/crypto/keyring"
-	"github.com/evmos/evmos/v12/testutil/network"
+	cmdcfg "github.com/OrigoTeam/origo/cmd/config"
+	evmoskr "github.com/OrigoTeam/origo/crypto/keyring"
+	"github.com/OrigoTeam/origo/testutil/network"
 )
 
 var (
@@ -142,7 +142,7 @@ or a similar setup where each node has a manually configurable IP address.
 Note, strict routability for addresses is turned off in the config file.
 
 Example:
-	catanead testnet init-files --v 4 --output-dir ./.testnets --starting-ip-address 192.168.10.2
+	catenad testnet init-files --v 4 --output-dir ./.testnets --starting-ip-address 192.168.10.2
 	`,
 		RunE: func(cmd *cobra.Command, _ []string) error {
 			clientCtx, err := client.GetClientQueryContext(cmd)
@@ -186,7 +186,7 @@ and generate "v" directories, populated with necessary validator configuration f
 (private validator, genesis, config, etc.).
 
 Example:
-	catanead testnet --v 4 --output-dir ./.testnets
+	catenad testnet --v 4 --output-dir ./.testnets
 	`,
 		RunE: func(cmd *cobra.Command, _ []string) error {
 			args := startArgs{}

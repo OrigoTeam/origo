@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Evmos packages. If not, see https://github.com/evmos/evmos/blob/main/LICENSE
+// along with the Evmos packages. If not, see https://github.com/OrigoTeam/origo/blob/main/LICENSE
 
 package main
 
@@ -51,24 +51,24 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/crisis"
 	genutilcli "github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
 
-	evmosclient "github.com/evmos/evmos/v12/client"
-	"github.com/evmos/evmos/v12/client/debug"
-	"github.com/evmos/evmos/v12/encoding"
-	"github.com/evmos/evmos/v12/ethereum/eip712"
-	evmosserver "github.com/evmos/evmos/v12/server"
-	servercfg "github.com/evmos/evmos/v12/server/config"
-	srvflags "github.com/evmos/evmos/v12/server/flags"
+	evmosclient "github.com/OrigoTeam/origo/client"
+	"github.com/OrigoTeam/origo/client/debug"
+	"github.com/OrigoTeam/origo/encoding"
+	"github.com/OrigoTeam/origo/ethereum/eip712"
+	evmosserver "github.com/OrigoTeam/origo/server"
+	servercfg "github.com/OrigoTeam/origo/server/config"
+	srvflags "github.com/OrigoTeam/origo/server/flags"
 
-	"github.com/evmos/evmos/v12/app"
-	cmdcfg "github.com/evmos/evmos/v12/cmd/config"
-	evmoskr "github.com/evmos/evmos/v12/crypto/keyring"
+	"github.com/OrigoTeam/origo/app"
+	cmdcfg "github.com/OrigoTeam/origo/cmd/config"
+	evmoskr "github.com/OrigoTeam/origo/crypto/keyring"
 )
 
 const (
 	EnvPrefix = "CATENA"
 )
 
-// NewRootCmd creates a new root command for catanead. It is called once in the
+// NewRootCmd creates a new root command for catenad. It is called once in the
 // main function.
 func NewRootCmd() (*cobra.Command, params.EncodingConfig) {
 	encodingConfig := encoding.MakeConfig(app.ModuleBasics)

@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Evmos packages. If not, see https://github.com/evmos/evmos/blob/main/LICENSE
+// along with the Evmos packages. If not, see https://github.com/OrigoTeam/origo/blob/main/LICENSE
 package rpc
 
 import (
@@ -42,11 +42,11 @@ import (
 	rpcclient "github.com/tendermint/tendermint/rpc/jsonrpc/client"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/evmos/evmos/v12/rpc/ethereum/pubsub"
-	rpcfilters "github.com/evmos/evmos/v12/rpc/namespaces/ethereum/eth/filters"
-	"github.com/evmos/evmos/v12/rpc/types"
-	"github.com/evmos/evmos/v12/server/config"
-	evmtypes "github.com/evmos/evmos/v12/x/evm/types"
+	"github.com/OrigoTeam/origo/rpc/ethereum/pubsub"
+	rpcfilters "github.com/OrigoTeam/origo/rpc/namespaces/ethereum/eth/filters"
+	"github.com/OrigoTeam/origo/rpc/types"
+	"github.com/OrigoTeam/origo/server/config"
+	evmtypes "github.com/OrigoTeam/origo/x/evm/types"
 )
 
 type WebsocketsServer interface {

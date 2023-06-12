@@ -14,11 +14,11 @@ import (
 	"github.com/tendermint/tendermint/abci/types"
 	tmrpctypes "github.com/tendermint/tendermint/rpc/core/types"
 
-	"github.com/evmos/evmos/v12/rpc/backend/mocks"
-	rpc "github.com/evmos/evmos/v12/rpc/types"
-	utiltx "github.com/evmos/evmos/v12/testutil/tx"
-	evmtypes "github.com/evmos/evmos/v12/x/evm/types"
-	feemarkettypes "github.com/evmos/evmos/v12/x/feemarket/types"
+	"github.com/OrigoTeam/origo/rpc/backend/mocks"
+	rpc "github.com/OrigoTeam/origo/rpc/types"
+	utiltx "github.com/OrigoTeam/origo/testutil/tx"
+	evmtypes "github.com/OrigoTeam/origo/x/evm/types"
+	feemarkettypes "github.com/OrigoTeam/origo/x/feemarket/types"
 )
 
 func (suite *BackendTestSuite) TestBaseFee() {

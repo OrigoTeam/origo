@@ -18,15 +18,15 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmrpctypes "github.com/tendermint/tendermint/rpc/core/types"
 
-	"github.com/evmos/evmos/v12/app"
-	"github.com/evmos/evmos/v12/crypto/hd"
-	"github.com/evmos/evmos/v12/encoding"
-	"github.com/evmos/evmos/v12/indexer"
-	"github.com/evmos/evmos/v12/rpc/backend/mocks"
-	rpctypes "github.com/evmos/evmos/v12/rpc/types"
-	utiltx "github.com/evmos/evmos/v12/testutil/tx"
-	"github.com/evmos/evmos/v12/utils"
-	evmtypes "github.com/evmos/evmos/v12/x/evm/types"
+	"github.com/OrigoTeam/origo/app"
+	"github.com/OrigoTeam/origo/crypto/hd"
+	"github.com/OrigoTeam/origo/encoding"
+	"github.com/OrigoTeam/origo/indexer"
+	"github.com/OrigoTeam/origo/rpc/backend/mocks"
+	rpctypes "github.com/OrigoTeam/origo/rpc/types"
+	utiltx "github.com/OrigoTeam/origo/testutil/tx"
+	"github.com/OrigoTeam/origo/utils"
+	evmtypes "github.com/OrigoTeam/origo/x/evm/types"
 )
 
 type BackendTestSuite struct {

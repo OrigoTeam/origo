@@ -4,11 +4,11 @@ import (
 	"time"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/evmos/evmos/v12/app"
-	"github.com/evmos/evmos/v12/testutil"
-	epochstypes "github.com/evmos/evmos/v12/x/epochs/types"
-	evm "github.com/evmos/evmos/v12/x/evm/types"
-	"github.com/evmos/evmos/v12/x/inflation/types"
+	"github.com/OrigoTeam/origo/app"
+	"github.com/OrigoTeam/origo/testutil"
+	epochstypes "github.com/OrigoTeam/origo/x/epochs/types"
+	evm "github.com/OrigoTeam/origo/x/evm/types"
+	"github.com/OrigoTeam/origo/x/inflation/types"
 )
 
 // Test helpers

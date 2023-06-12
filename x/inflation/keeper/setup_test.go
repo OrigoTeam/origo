@@ -9,10 +9,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/suite"
 
-	evm "github.com/evmos/evmos/v12/x/evm/types"
+	evm "github.com/OrigoTeam/origo/x/evm/types"
 
-	"github.com/evmos/evmos/v12/app"
-	"github.com/evmos/evmos/v12/x/inflation/types"
+	"github.com/OrigoTeam/origo/app"
+	"github.com/OrigoTeam/origo/x/inflation/types"
 )
 
 var denomMint = types.DefaultInflationDenom

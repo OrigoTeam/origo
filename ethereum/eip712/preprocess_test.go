@@ -14,13 +14,13 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/auth/ante"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 
-	"github.com/evmos/evmos/v12/app"
-	"github.com/evmos/evmos/v12/cmd/config"
-	"github.com/evmos/evmos/v12/encoding"
-	"github.com/evmos/evmos/v12/ethereum/eip712"
-	utiltx "github.com/evmos/evmos/v12/testutil/tx"
-	"github.com/evmos/evmos/v12/types"
-	"github.com/evmos/evmos/v12/utils"
+	"github.com/OrigoTeam/origo/app"
+	"github.com/OrigoTeam/origo/cmd/config"
+	"github.com/OrigoTeam/origo/encoding"
+	"github.com/OrigoTeam/origo/ethereum/eip712"
+	utiltx "github.com/OrigoTeam/origo/testutil/tx"
+	"github.com/OrigoTeam/origo/types"
+	"github.com/OrigoTeam/origo/utils"
 	"github.com/stretchr/testify/require"
 )
 

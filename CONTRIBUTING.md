@@ -29,8 +29,8 @@ Contributing to this repo can mean many things such as participating in discussi
 To ensure a smooth workflow for all contributors,
 the following general procedure for contributing has been established:
 
-1. Either [open](https://github.com/evmos/evmos/issues/new/choose)
-   or [find](https://github.com/evmos/evmos/issues) an issue you have identified and would like to contribute to
+1. Either [open](https://github.com/OrigoTeam/origo/issues/new/choose)
+   or [find](https://github.com/OrigoTeam/origo/issues) an issue you have identified and would like to contribute to
    resolving.
 2. Participate in thoughtful discussion on that issue.
 3. If you would like to contribute:
@@ -68,12 +68,12 @@ before an adequate design discussion has taken place in a GitHub issue,
 that PR runs a high likelihood of being rejected.
 
 Looking for a good place to start contributing?
-Check out our [good first issues](https://github.com/evmos/evmos/issues?q=label%3A%22good+first+issue%22).
+Check out our [good first issues](https://github.com/OrigoTeam/origo/issues?q=label%3A%22good+first+issue%22).
 
 ## <span id="adr">Architecture Decision Records (ADR)</span>
 
 When proposing an architecture decision for Evmos,
-please create an [ADR](https://github.com/evmos/evmos/blob/main/docs/architecture/README.md)
+please create an [ADR](https://github.com/OrigoTeam/origo/blob/main/docs/architecture/README.md)
 so further discussions can be made.
 We are following this process so all involved parties are in agreement
 before any party begins coding the proposed implementation.
@@ -83,7 +83,7 @@ refer to [Tendermint ADRs](https://github.com/tendermint/tendermint/tree/master/
 ## <span id="forking">Forking</span>
 
 Please note that Go requires code to live under absolute paths, which complicates forking.
-While my fork lives at `https://github.com/evmos/evmos`,
+While my fork lives at `https://github.com/OrigoTeam/origo`,
 the code should never exist at `$GOPATH/src/github.com/evmos/evmos`.
 Instead, we use `git remote` to add the fork as a new remote for the original repo,`$GOPATH/src/github.com/evmos/evmos`,
 and do all the work there.

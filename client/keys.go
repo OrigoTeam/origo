@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Evmos packages. If not, see https://github.com/evmos/evmos/blob/main/LICENSE
+// along with the Evmos packages. If not, see https://github.com/OrigoTeam/origo/blob/main/LICENSE
 package client
 
 import (
@@ -25,8 +25,8 @@ import (
 	"github.com/tendermint/tendermint/libs/cli"
 
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	clientkeys "github.com/evmos/evmos/v12/client/keys"
-	"github.com/evmos/evmos/v12/crypto/hd"
+	clientkeys "github.com/OrigoTeam/origo/client/keys"
+	"github.com/OrigoTeam/origo/crypto/hd"
 )
 
 // KeyCommands registers a sub-tree of commands to interact with

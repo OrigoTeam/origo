@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Evmos packages. If not, see https://github.com/evmos/evmos/blob/main/LICENSE
+// along with the Evmos packages. If not, see https://github.com/OrigoTeam/origo/blob/main/LICENSE
 
 package upgrade
 
@@ -95,7 +95,7 @@ func RetrieveUpgradesList(upgradesPath string) ([]string, error) {
 	return versions, nil
 }
 
-// ExportState executes the  'docker cp' command to copy container .catanead dir
+// ExportState executes the  'docker cp' command to copy container .catenad dir
 // to the specified target dir (local)
 //
 // See https://docs.docker.com/engine/reference/commandline/cp/

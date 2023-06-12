@@ -9,11 +9,11 @@ import (
 	distrtypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
-	testutil "github.com/evmos/evmos/v12/testutil"
-	utiltx "github.com/evmos/evmos/v12/testutil/tx"
-	evmostypes "github.com/evmos/evmos/v12/types"
-	"github.com/evmos/evmos/v12/x/claims/types"
-	vestingtypes "github.com/evmos/evmos/v12/x/vesting/types"
+	testutil "github.com/OrigoTeam/origo/testutil"
+	utiltx "github.com/OrigoTeam/origo/testutil/tx"
+	evmostypes "github.com/OrigoTeam/origo/types"
+	"github.com/OrigoTeam/origo/x/claims/types"
+	vestingtypes "github.com/OrigoTeam/origo/x/vesting/types"
 )
 
 func (suite *KeeperTestSuite) TestEndBlock() {

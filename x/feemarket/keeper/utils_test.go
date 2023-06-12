@@ -5,7 +5,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/evmos/evmos/v12/utils"
+	"github.com/OrigoTeam/origo/utils"
 
 	sdkmath "cosmossdk.io/math"
 	"github.com/cosmos/cosmos-sdk/baseapp"
@@ -21,14 +21,14 @@ import (
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/evmos/evmos/v12/app"
-	"github.com/evmos/evmos/v12/crypto/ethsecp256k1"
-	"github.com/evmos/evmos/v12/encoding"
-	"github.com/evmos/evmos/v12/testutil"
-	utiltx "github.com/evmos/evmos/v12/testutil/tx"
-	evmostypes "github.com/evmos/evmos/v12/types"
-	evmtypes "github.com/evmos/evmos/v12/x/evm/types"
-	"github.com/evmos/evmos/v12/x/feemarket/types"
+	"github.com/OrigoTeam/origo/app"
+	"github.com/OrigoTeam/origo/crypto/ethsecp256k1"
+	"github.com/OrigoTeam/origo/encoding"
+	"github.com/OrigoTeam/origo/testutil"
+	utiltx "github.com/OrigoTeam/origo/testutil/tx"
+	evmostypes "github.com/OrigoTeam/origo/types"
+	evmtypes "github.com/OrigoTeam/origo/x/evm/types"
+	"github.com/OrigoTeam/origo/x/feemarket/types"
 
 	"github.com/stretchr/testify/require"
 

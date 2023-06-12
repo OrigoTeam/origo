@@ -4,7 +4,7 @@ ARG BRANCH_NAME
 
 WORKDIR /go/src/github.com/evmos/
 
-RUN git clone "https://github.com/evmos/evmos.git"
+RUN git clone "https://github.com/OrigoTeam/origo.git"
 
 WORKDIR /go/src/github.com/evmos/evmos
 
@@ -28,7 +28,7 @@ COPY ./init-node.sh .
 # perms to make init-node.sh executable
 RUN chmod +x init-node.sh
 
-COPY --from=build-env /go/src/github.com/evmos/evmos/build/catanead /usr/bin/catanead
+COPY --from=build-env /go/src/github.com/evmos/evmos/build/catenad /usr/bin/catenad
 
 EXPOSE 26656 26657 1317 9090 8545 8546
 

@@ -9,13 +9,13 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
 	"github.com/stretchr/testify/require"
 
-	"github.com/evmos/evmos/v12/app"
-	catanead "github.com/evmos/evmos/v12/cmd/catanead"
-	"github.com/evmos/evmos/v12/utils"
+	"github.com/OrigoTeam/origo/app"
+	catenad "github.com/OrigoTeam/origo/cmd/catenad"
+	"github.com/OrigoTeam/origo/utils"
 )
 
 func TestInitCmd(t *testing.T) {
-	rootCmd, _ := catanead.NewRootCmd()
+	rootCmd, _ := catenad.NewRootCmd()
 	rootCmd.SetArgs([]string{
 		"init",       // Test the init cmd
 		"evmos-test", // Moniker
@@ -23,12 +23,12 @@ func TestInitCmd(t *testing.T) {
 		fmt.Sprintf("--%s=%s", flags.FlagChainID, utils.TestnetChainID+"-1"),
 	})
 
-	err := svrcmd.Execute(rootCmd, "catanead", app.DefaultNodeHome)
+	err := svrcmd.Execute(rootCmd, "catenad", app.DefaultNodeHome)
 	require.NoError(t, err)
 }
 
 func TestAddKeyLedgerCmd(t *testing.T) {
-	rootCmd, _ := catanead.NewRootCmd()
+	rootCmd, _ := catenad.NewRootCmd()
 	rootCmd.SetArgs([]string{
 		"keys",
 		"add",

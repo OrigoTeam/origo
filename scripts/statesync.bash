@@ -8,8 +8,8 @@
 ## USAGE RUNDOWN
 # Not for use on live nodes
 # For use when testing.
-# Assumes that ~/.catanead doesn't exist
-# can be modified to suit your purposes if ~/.catanead does already exist
+# Assumes that ~/.catenad doesn't exist
+# can be modified to suit your purposes if ~/.catenad does already exist
 
 
 set -uxe
@@ -31,11 +31,11 @@ go install ./...
 # go install -ldflags '-w -s -X github.com/cosmos/cosmos-sdk/types.DBBackend=boltdb' -tags boltdb ./...
 
 # Initialize chain.
-catanead init test --chain-id evmos_9000-1
+catenad init test --chain-id evmos_9000-1
 
 # Get Genesis
 wget https://archive.evmos.org/mainnet/genesis.json
-mv genesis.json ~/.catanead/config/
+mv genesis.json ~/.catenad/config/
 
 
 # Get "trust_hash" and "trust_height".
@@ -59,4 +59,4 @@ export EVMOSD_STATESYNC_TRUST_HASH=$TRUST_HASH
 export EVMOSD_P2P_SEEDS=$(curl -s https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/chain.json | jq -r '[foreach .peers.seeds[] as $item (""; "\($item.id)@\($item.address)")] | join(",")')
 
 # Start chain.
-catanead start --x-crisis-skip-assert-invariants 
+catenad start --x-crisis-skip-assert-invariants 

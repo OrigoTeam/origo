@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Evmos packages. If not, see https://github.com/evmos/evmos/blob/main/LICENSE
+// along with the Evmos packages. If not, see https://github.com/OrigoTeam/origo/blob/main/LICENSE
 package testutil
 
 import (
@@ -26,9 +26,9 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/evmos/evmos/v12/app"
-	"github.com/evmos/evmos/v12/encoding"
-	"github.com/evmos/evmos/v12/testutil/tx"
+	"github.com/OrigoTeam/origo/app"
+	"github.com/OrigoTeam/origo/encoding"
+	"github.com/OrigoTeam/origo/testutil/tx"
 )
 
 // Commit commits a block at a given time. Reminder: At the end of each

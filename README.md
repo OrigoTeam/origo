@@ -8,10 +8,10 @@ parent:
 </div>
 
 <div align="center">
-  <a href="https://github.com/evmos/evmos/releases/latest">
+  <a href="https://github.com/OrigoTeam/origo/releases/latest">
     <img alt="Version" src="https://img.shields.io/github/tag/tharsis/evmos.svg" />
   </a>
-  <a href="https://github.com/evmos/evmos/blob/main/LICENSE">
+  <a href="https://github.com/OrigoTeam/origo/blob/main/LICENSE">
     <img alt="License: Apache-2.0" src="https://img.shields.io/github/license/tharsis/evmos.svg" />
   </a>
   <a href="https://pkg.go.dev/github.com/evmos/evmos">
@@ -28,8 +28,8 @@ parent:
   <a href="https://discord.gg/evmos">
     <img alt="Discord" src="https://img.shields.io/discord/809048090249134080.svg" />
   </a>
-  <a href="https://github.com/evmos/evmos/actions?query=branch%3Amain+workflow%3ALint">
-    <img alt="Lint Status" src="https://github.com/evmos/evmos/actions/workflows/lint.yml/badge.svg?branch=main" />
+  <a href="https://github.com/OrigoTeam/origo/actions?query=branch%3Amain+workflow%3ALint">
+    <img alt="Lint Status" src="https://github.com/OrigoTeam/origo/actions/workflows/lint.yml/badge.svg?branch=main" />
   </a>
   <a href="https://codecov.io/gh/evmos/evmos">
     <img alt="Code Coverage" src="https://codecov.io/gh/evmos/evmos/branch/main/graph/badge.svg" />
@@ -61,7 +61,7 @@ Once the dependencies are installed, run:
 make install
 ```
 
-Or check out the latest [release](https://github.com/evmos/evmos/releases).
+Or check out the latest [release](https://github.com/OrigoTeam/origo/releases).
 
 ## Quick Start
 
@@ -81,7 +81,7 @@ The following chat channels and forums are a great spot to ask questions about E
 
 Looking for a good place to start contributing?
 Check out some
-[`good first issues`](https://github.com/evmos/evmos/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
+[`good first issues`](https://github.com/OrigoTeam/origo/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
 
 For additional instructions, standards and style guides, please refer to the [Contributing](./CONTRIBUTING.md) document.
 
