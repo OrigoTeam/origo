@@ -1,4 +1,4 @@
-// Copyright 2022 Evmos Foundation
+// Copyright 2023 Origo Foundation
 // This file is part of Evmos' Evmos packages.
 //
 // The Evmos packages is free software: you can redistribute it and/or modify
@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Evmos packages. If not, see https://github.com/OrigoTeam/origo/blob/main/LICENSE
+// along with the Origo packages. If not, see https://github.com/OrigoTeam/origo/blob/main/LICENSE
 package statedb
 
 import (
